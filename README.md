@@ -39,9 +39,9 @@ glusterfs (default)               kubernetes.io/glusterfs   3d4h
 
 If your Kubernetes cluster environment meets all requirements mentioned above, then you can start to install ImagineKube
 
-## To Start Deploying KubeSphere
+## Start Deploying ImagineKube
 
-### Minimal Installation
+### minimal install
 
 ```bash
 kubectl apply -f https://github.com/imaginekube/ik-deployer/releases/download/v1.0.0/imaginekube-installer.yaml
