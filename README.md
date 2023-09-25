@@ -1,7 +1,7 @@
 # Deploy ImagineKube on existing Kubernetes cluster 
 
 
-In addition to supporting deploying on VM and BM, ImagineKube also supports installing on cloud-hosted and on-premises existing Kubernetes clusters.
+In addition to supporting deploying on VM, ImagineKube also supports installing on cloud-hosted and on-premises existing Kubernetes clusters.
 
 ## Prerequisites
 
@@ -91,7 +91,7 @@ kubectl -n imaginekube-monitoring-system create secret generic kube-etcd-client-
 ```bash
 kubectl edit cc ik-deployer -n imaginekube-system
 ```
-> Note: When you're enabling KubeEdge, please set advertiseAddress as below and expose corresponding ports correctly before you run or restart ik-deployer. Please refer to [KubeEdge Guide](https://kubesphere.io/docs/pluggable-components/kubeedge/) for more details.
+> Note: When you're enabling KubeEdge, please set advertiseAddress as below and expose corresponding ports correctly before you run or restart ik-deployer. Please refer to [KubeEdge Guide](https://imaginekube.io/docs/pluggable-components/kubeedge/) for more details.
 ```yaml
 kubeedge:
     cloudCore:
@@ -108,7 +108,7 @@ kubectl logs -n imaginekube-system $(kubectl get pod -n imaginekube-system -l ap
 
 ## Upgrade
 
-Deploy the new version of ks-installer:
+Deploy the new version of ik-deployer:
 ```bash
 # Notice: ik-deployer will automatically migrate the configuration. Do not modify the cluster configuration by yourself.
 
